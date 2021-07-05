@@ -77,6 +77,8 @@ ___粗斜体___</br>
   <table><tr><td bgcolor=#CBB4e3>背景色的设置是按照十六进制颜色值：#CBB4e3</td></tr></table>
   <table><tr><td bgcolor=#C97586>背景色的设置是按照十六进制颜色值：#C97586</td></tr></table>
 
+#ed556a 山茶红
+
 ---
 ## 链接 
 1. 直接设置（行内形式） 语法：[链接名称]（链接地址 “链接title”） </br>
@@ -120,9 +122,9 @@ eg：
     <span style="border-bottom:2px solid red;">下划线</span> 
 ## 代码块
 1. 代码句
-    用反引号(`)，就是英文状态下的波浪线
+    用反引号(\`)，就是英文状态下的波浪线
     eg：
-`我是代码句`
+    `我是代码句`
 
 2. 代码块
     4个空格（或用Tab缩进）定义代码块
@@ -184,3 +186,85 @@ ERROR: Failed to download Chromium! If you are behind a proxy, set the http.prox
   Alice -> Bob: synchronous call
   Alice ->> Bob: asynchronous call
 #+END_SRC
+
+
+在主界面中，文件 >>首选项>>用户片段
+
+选择需要新增代码补全的文件类型(vscode可以根据文件的不同来采用不同的代码补全方案,当然你也可以设置全局代码补全方案)
+我们这里以.md文件为例,于是选择markdown即可
+
+在书写md文件时,笔者经常会感觉添加代码块太麻烦了,一共需要输入六个反撇号,以及一个代码名称标识,如图:
+
+
+于是笔者打算先添加一系列的代码块自动补全
+
+模板
+    "name"://该补全项目的名称,可以随便写，多个项目之间需要使用逗号隔开 {  
+        "prefix": "输入此内容后触发补全联想", 
+        "body":   "选中并按下回车后自动补全的内容",// $1代表光标默认位置
+        "description": "此代码补全项的提示语" 
+    }
+因此,只需添加:
+
+    "C++_block": {  
+        "prefix": "```C++", 
+        "body":   "```C++\n$1\n```$2",
+           // 另外$1代表光标默认位置,$2代表按下tab后会切换至的下一个光标落点,此外shift+tab能够切换至上一个光标落点
+    }
+
+然而vscode对markdown默认关闭代码补全功能，经过笔者尝试，网上提供的自动开启代码补全的方法只能对工作区文件夹有效，无法做到在任意文件夹下有效
+
+当处于临时文件夹编辑md文本内容时，需要使用ctrl+space手动打开代码补全功能。此外，该快捷键与切换输入法快捷键冲突，因此笔者建议下载markdown all in one 扩展插件
+
+该扩展插件内置了一套逻辑，该逻辑可以使得vscode在任意文件夹下都有自动打开代码补全功能
+
+效果图（tab键可以切换至下一个填充位点，shift+tab可以切换至上一个）：
+
+———————————————
+### 表格
+---------------------------
+项目 | Value
+-------- | -----
+电脑 | $1600
+手机 | $12
+导管 | $1
+| Column 1 | Column 2 |
+|:--------:| -------------:|
+
+### 插入Mermaid流程图
+--------
+mermaid
+graph LR
+A[长方形] -- 链接 --> B((圆))
+A --> C(圆角长方形)
+B --> D{菱形}
+C --> D
+
+插入Flowchart流程图
+-------
+mermaid
+flowchat
+st=>start: 开始
+e=>end: 结束
+op=>operation: 我的操作
+cond=>condition: 确认？
+st->op->cond
+cond(yes)->e
+cond(no)->op
+———————————————
+
+
+
+图片缩放
+<center>
+<img src = "https://img-blog.csdnimg.cn/20190110153341989.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zODE4NDc0MQ==,size_16,color_FFFFFF,t_70" width=30% >
+
+图片居中
+<center>
+<img src = "https://img-blog.csdnimg.cn/20190110153341989.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zODE4NDc0MQ==,size_16,color_FFFFFF,t_70">
+
+图片右对齐
+<div align=right>
+<img src = "https://img-blog.csdnimg.cn/20190110153341989.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zODE4NDc0MQ==,size_16,color_FFFFFF,t_70" width=30% >
+
+

@@ -119,3 +119,28 @@ Ctrl + Shift + F （查找文件）
 
 img
 https://www.cnblogs.com/tu-0718/p/10935910.html
+
+1. 文件→首选项→用户片段
+
+2. 快捷键：ctrl + shift + p → 输入：snippets
+3. 参数说明
+    prefix：快捷输入的入口。
+
+    body：快捷输入的代码体，输入入口的字符后按回车自动呈现的代码，字符串间换行的话使用 \r\n 换行符隔开。如果有特殊字符需要进行转义,多行代码以 ，分隔。
+
+    $0：光标最终的位置。
+
+    $1 - $n：每次按下 tab 光标跳转的位置，起始位置为 $1。
+
+    description：代码段描述，智能感知时的描述，当定义的快捷输入过多时的提示。
+    ```
+    "Print to console": {
+	"prefix": "log",
+	"body": [
+	"console.log($1);"
+	],
+	"description": "Log output to console"
+    }
+    ```
+
+
