@@ -1,6 +1,10 @@
+typora
+
 # Markdown All in One 使用说明</br>
+
 Markdown Preview Enhanced</br>
 ## Markdown All in One插件快捷键用法：
+
 快捷键	操作</br>
 Ctrl+B	加粗</br>
 Ctrl+l	斜体</br>
@@ -217,6 +221,12 @@ ERROR: Failed to download Chromium! If you are behind a proxy, set the http.prox
 当处于临时文件夹编辑md文本内容时，需要使用ctrl+space手动打开代码补全功能。此外，该快捷键与切换输入法快捷键冲突，因此笔者建议下载markdown all in one 扩展插件
 
 该扩展插件内置了一套逻辑，该逻辑可以使得vscode在任意文件夹下都有自动打开代码补全功能
+```
+"[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+```
+
 
 效果图（tab键可以切换至下一个填充位点，shift+tab可以切换至上一个）：
 
@@ -239,6 +249,10 @@ A[长方形] -- 链接 --> B((圆))
 A --> C(圆角长方形)
 B --> D{菱形}
 C --> D
+
+mermaid
+graph DT
+B --> D
 
 插入Flowchart流程图
 -------

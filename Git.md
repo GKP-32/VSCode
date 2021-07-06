@@ -1,10 +1,11 @@
+
+# 作为一名在 GitHub 上收获 70k star 的程序员，我想用两万字加一百张图片从头到尾的给你介绍 GitHub 的具体使用，通过这个 GitHub 教程，让你掌握 GitHub 的使用方法
+
 程序员吴师兄
 程序员吴师兄
 ​
 关注公众号「五分钟学算法」，不再害怕算法面试！
 2,563 人赞同了该回答
-作为一名在 GitHub 上收获 70k star 的程序员，我想用两万字加一百张图片从头到尾的给你介绍 GitHub 的具体使用，通过这个 GitHub 教程，让你掌握 GitHub 的使用方法。
-
 
 我的 GitHub 地址：MisterBooo/LeetCodeAnimation
 
@@ -43,22 +44,17 @@ GitHub 项目本身自然而然的也在 GitHub 上进行托管，只不过在�
 
 2.1 Linus Torvalds
 
-
-
-
 GitHub 主页：torvalds - Overview
 
 Linus Torvalds，全球著名的电脑程序员、黑客，Linux 之父。
 
 2.2 John Resig
 
-
 Github主页： jeresig - Overview
 
 John Resig，jQuery 的创始人和技术领袖，著有《Pro JavaScript Techniques》（即《精通JavaScript》）等经典 JavaScript 书籍。
 
 2.3 Jake Wharton
-
 
 Github主页： JakeWharton - Overview
 
@@ -91,13 +87,11 @@ Alibaba：Alibaba
 
 首先，进入 GitHub 的官网：https://www.github.com
 
-
 标注 1：Sign in，登录；
 
 标注 2：Sign up，注册。
 
 如上图所示，这是 GitHub 的官网首页，点击 Sign up 进行注册：
-
 
 标注 1：Username，用户名；
 
@@ -109,16 +103,13 @@ Alibaba：Alibaba
 
 如上图所示，其中 标注 1 比较重要，最好起对我们具有标识性的用户名，而且如果以后我们要在 GitHub 上搭建自己的个人博客，其默认地址就是username.github.io；标注 2 是需要我们验证 GitHub 账号的邮箱，注册时只能填写一个，之后可以添加多个邮箱。上面的信息都填写完成后，点击 Create an account ，进入如下界面：
 
-
 标注 1：公开的，免费仓库；
 
 标注 2：私有的，付费仓库。
 
 如上图所示，我们进入了注册 GitHub 账号流程的第 2 步，在这里有一点需要我们注意，那就是：GitHub 的仓库分为两种，一种是public repositories公开免费版，一种是private repositories私有付费版。其中，私有仓库一般是由企业或者不希望自己的仓库公开的个人用户购买，这也是 GitHub 的主要收入来源。在这里，我们选择免费版就可以，然后点击Continue，进入如下界面：
 
-
 如上图所在，这是注册 GitHub 账号流程的第 3 步，也是最后一步。这个步骤的主要作用就是收集用户的个人信息，如果感兴趣的话，可以对上面的“ 问答表 ”进行勾选，然后点击Submit提交；如果不感兴趣的话，则可以直接点击skip this step跳过这一步。无论点击两者之中的那个按钮，都将进入如下界面：
-
 
 标注1：Read the guide，阅读指南；
 
@@ -128,14 +119,11 @@ Alibaba：Alibaba
 
 三、GitHub 主页介绍及修改个人信息
 
-
-
 标注 1：View profile and more，更多选项视图；
 
 标注 2：Your profile，个人简介。
 
 如上图所在，我们依次点击 标注 1 所示的View profile and more和 标注 2 所示的Your profile，进入「个人简介」界面：
-
 
 标注 1：Edit profile，修改个人简介；
 
@@ -165,21 +153,17 @@ Alibaba：Alibaba
 
 在这里，我们点击Edit profile，编辑个人简历：
 
-
 如上图所示，我们可以通过这个界面填写个人信息，包括 Name（昵称）、Bio（自我介绍）、URL（链接）、Company（公司）、Location（位置）以及 Upload new picture（上传头像）等等。在我们填写完个人信息之后，可以点击Update profile更新个人简介，同时可以勾选Available for hire，选择“雇主可见”，然后点击Save jobs profile，保存我们的求职简历。
-
 
 此外，在Personal settings中，还包含很多其他的选择，如在Account中，可以修改账号密码；在Emails中，可以修改绑定的邮箱等等。在这里，用红色框圈起的SSH and GPG keys非常重要，我们可以通过它连接到本地的 IDE，从而保证项目提交与检出的安全性。
 
 接下来，展示一下我们刚刚修改完的 GitHub 账号主页：
-
 
 四、创建 GitHub 仓库的步骤及方法
 
 如上图所示，此为博主的 GitHub 个人主页，点击Repositories，进入如下界面：
 
 点击上图标注所示的绿色New按钮，进入下一步：
-
 
 标注 1：Repository name，仓库名称；
 
@@ -190,7 +174,6 @@ Alibaba：Alibaba
 标注 4：Initialize this repository with a README，初始化仓库的信息文件，建议勾选。
 
 如上图所示，这是创建 GitHub 仓库的核心页面，里面包含了众多信息。为了方便演示，博主已经把各种所需的信息都填写完啦！接下来，点击绿色Create repository按钮即可：
-
 
 如上图所示，我们已经把仓库创建成功啦！
 
@@ -230,38 +213,21 @@ Gist：如果我们没有项目可以开源或者只是单纯的想分享一些�
 
 首先，进入 Git 的官网：git - -fast-version-control
 
-
 如上图所示，在 Git 的官网中点击Downloads，进入如下页面：
-
 
 如上图所示，选择对应的操作系统，以博主为例，点击Windows，进入如下页面：
 
-
 如上图所示，正常情况下，会自动弹出下载框，否则的话，手动点击红色箭头所示的 click here to download manually 亦可进入如下界面：
-
-
-
 
 如上图所示，直接点击 下载 即可，下载完成后，双击打开，进入如下界面：
 
-
-
-
 如上图所示，这是 Git 的安装界面，点击Next，进入如下界面：
-
-
-
 
 如上图所示，选择 Git 的安装目录，默认安装到C盘的Program Files目录下，想换的话，点击Browse进入更换。在这里，我们选择将其安装到D盘的Program Files目录下，选择完成后，点击Next，进入如下界面：
 
-
-
-
 如上图所示，这里有一些可勾选的项，我们可以按自己的实际需求进行选择（后面同样如此），例如勾选Additional icons，将在 Git 安装完成后，在桌面创建一个图标，也就是打开 Git 的快捷方式。在这一步，建议大家选择默认即可，例如默认勾选的Windows Explorer integration，就可以让我们在点击鼠标右键的时候，快速选择打开Git GUI或者 Git Bash。选择完成后，点击Next，进入如下界面：
 
-
 如上图所示，选择 开始菜单文件夹，默认即可，点击Next，进入如下界面：
-
 
 标注 1：仅使用 Git Bash 进行操作；
 
